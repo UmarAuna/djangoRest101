@@ -30,7 +30,7 @@ SECRET_KEY = 'v#0ntp4(4wdp%)nfrwlw35h0odo=d^152+#2a43^6pn&tb%)98'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://demoauna.herokuapp.com/']
+ALLOWED_HOSTS = ['https://demoauna.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-db_from_env = dj_database_url.config(conn_max_age=500) DATABASES['default']=db_from_env
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Password validation
