@@ -29,7 +29,7 @@ SECRET_KEY = 'v#0ntp4(4wdp%)nfrwlw35h0odo=d^152+#2a43^6pn&tb%)98'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://demoauna.herokuapp.com/']
 
 
 # Application definition
